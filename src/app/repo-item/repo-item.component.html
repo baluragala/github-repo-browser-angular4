@@ -1,0 +1,14 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <img src="{{repo.owner.avatar_url}}" [style.width.px]="32" style="display: inline">
+      <h4 class="title">{{repo.full_name}}</h4>
+      <p class="btn btn-warning right"><i class="glyphicon glyphicon-star"></i><span style="padding-left:10px">{{repo.stargazers_count}}</span></p>
+      <p class="btn btn-danger right"><i class="glyphicon glyphicon glyphicon-eye-open"></i><span style="padding-left:10px">{{repo.watchers_count}}</span></p>
+      <p class="btn btn-primary right"><i class="glyphicon glyphicon-random"></i><span style="padding-left:10px">{{repo.forks}}</span></p>
+    </div>
+    <div class="panel-body">
+      <p>{{repo.description}}</p>
+    </div>
+  </div>
+</div>
